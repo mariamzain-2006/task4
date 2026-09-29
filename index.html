@@ -13,8 +13,9 @@
         <img src="templatemo-eduwell.png">
         
     </div>
+   
     <nav>
-        <ul>
+        <ul id="nav-list">
             <li>Home</li>
              <li>Services</li>
               <li>Cources</li>
@@ -22,6 +23,9 @@
                 <li>Testimonials</li>
         </ul>
     </nav>
+    <div class="menu-icon" id="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+    </div>
     <a>Contact Us</a>
 </header>
     <main>
@@ -208,5 +212,17 @@
         Design: <strong>TemplateMo</strong>
     </p>
 </footer>
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navList = document.getElementById('nav-list');
+
+    menuIcon.addEventListener('click', () => {
+        if (navList.style.display === 'flex') {
+            navList.style.display = 'none';
+        } else {
+            navList.style.display = 'flex';
+        }
+    });
+</script>
 </body>
 </html>
