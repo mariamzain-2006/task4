@@ -523,7 +523,7 @@ font-size: 30px;
    ========================================== */
 
 /* أجهزة التابلت والشاشات المتوسطة (992px وأقل) */
-@media (max-width: 992px) {
+@media (max-width: 480px) {
     header {
         justify-content: space-between;
         padding: 0 20px;
